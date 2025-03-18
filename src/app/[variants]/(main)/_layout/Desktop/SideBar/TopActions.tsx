@@ -22,7 +22,7 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
   return (
     <>
       <Link
-        aria-label={t('tab.chat')}
+        aria-label={'Klepet'}
         href={'/chat'}
         onClick={(e) => {
           e.preventDefault();
@@ -34,7 +34,7 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
           icon={MessageSquare}
           placement={'right'}
           size="large"
-          title={t('tab.chat')}
+          title={'Klepet'}
         />
       </Link>
       {enableKnowledgeBase && (
