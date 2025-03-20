@@ -27,7 +27,7 @@ const PlanTag = memo<PlanTagProps>(({ type = PlanType.Preview }) => {
           style: {
             background: theme.colorFill,
           },
-          title: 'Community',
+          title: 'Pro',
         };
       }
     }
