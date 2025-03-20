@@ -4,8 +4,8 @@
       "replaceBtn": "Replace Batch",
       "title": "New Assistant Recommendations:"
     },
-    "defaultMessage": "I am your personal intelligent assistant {{appName}}. How can I assist you today?\nIf you need a more professional or customized assistant, you can click `+` to create a custom assistant.",
-    "defaultMessageWithoutCreate": "I am your personal intelligent assistant {{appName}}. How can I assist you today?",
+    "defaultMessage": "Sem vaš osebni inteligentni pomočnik {{appName}}.Kako vam lahko danes pomagam?\nČe potrebujete bolj profesionalnega ali prilagojenega pomočnika, lahko kliknete »+«, da ustvarite pomočnika po meri.",
+    "defaultMessageWithoutCreate": "Sem vaš osebni inteligentni pomočnik {{appName}}. Kako vam lahko danes pomagam?",
     "qa": {
       "q01": "What is LobeHub?",
       "q02": "What is {{appName}}?",

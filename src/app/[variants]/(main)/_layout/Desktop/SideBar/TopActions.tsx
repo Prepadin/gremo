@@ -2,7 +2,6 @@ import { ActionIcon } from '@lobehub/ui';
 import { Compass, FolderClosed, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import { useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
@@ -15,7 +14,7 @@ export interface TopActionProps {
 }
 
 const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
-  const { t } = useTranslation('common');
+  // const { t } = useTranslation('common');
   const switchBackToChat = useGlobalStore((s) => s.switchBackToChat);
   const { showMarket, enableKnowledgeBase } = useServerConfigStore(featureFlagsSelectors);
 
@@ -38,24 +37,24 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
         />
       </Link>
       {enableKnowledgeBase && (
-        <Link aria-label={t('tab.files')} href={'/files'}>
+        <Link aria-label={'Datoteke'} href={'/files'}>
           <ActionIcon
             active={tab === SidebarTabKey.Files}
             icon={FolderClosed}
             placement={'right'}
             size="large"
-            title={t('tab.files')}
+            title={'Datoteke'}
           />
         </Link>
       )}
       {showMarket && (
-        <Link aria-label={t('tab.discover')} href={'/discover'}>
+        <Link aria-label={'Razišči'} href={'/discover'}>
           <ActionIcon
             active={tab === SidebarTabKey.Discover}
             icon={Compass}
             placement={'right'}
             size="large"
-            title={t('tab.discover')}
+            title={'Razišči'}
           />
         </Link>
       )}
